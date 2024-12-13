@@ -16,22 +16,6 @@ module LocatePeoplePackage
       @reverse_phone_search_client = LocatePeoplePackage::APIClients::ReversePhoneSearchClient.new(@authorization, @base_uri)
     end
 
-    #def mb_base_client
-    # @mb_base_client ||= MBBaseClient.new(@authorization, @base_uri)
-    #end
-
-    #def email_search_client
-    # @email_search_client ||= EmailSearchClient.new(mb_base_client)
-    #end
-
-    #def phone_search_client
-    # @phone_search_client ||= PhoneSearchClient.new(mb_base_client)
-    #end
-
-    #def reverse_phone_search_client
-    # @reverse_phone_search_client ||= ReversePhoneSearchClient.new(mb_base_client)
-    #end
-
     private
 
     def mba_authorizations(client_id, client_secret)
