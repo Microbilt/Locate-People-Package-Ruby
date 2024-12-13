@@ -9,7 +9,7 @@ require_relative '../Library/lib/clients/PhoneSearchClient'
 require_relative '../Library/lib/clients/ReversePhoneSearchClient'
 require_relative '../Library/lib/model/model'
 
-locate_people_package_client = LocatePeoplePackage::LocatePeoplePackageClient.new('yYsbzWjFhn6e4IHvb6pfJjgpQUZ0Kini', 'hNfiMKvG71vbjADL', EnvironmentType::Sandbox)
+locate_people_package_client = LocatePeoplePackage::LocatePeoplePackageClient.new('You_client_id', 'You_client_secret', EnvironmentType::Sandbox)
 
 puts "Test EmailSearchClient:"
 person_name = PersonName.new(
